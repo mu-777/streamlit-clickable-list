@@ -122,10 +122,11 @@ Only the first time:
 To publish:
 - First, publish it to PyPI
   - Because the app in Streamlit Community Cloud uses the streamlit-clickable-list in PyPI
-- Generate `requirement.txt`
-  - If you use `uv`, run:
-    ```
-    uv pip compile pyproject.toml > requirements.txt
-    ```
+- Add new packege in `requirement.txt` if needed
+  - Do NOT use `uv pip compile pyproject.toml > requirements.txt`
+    - The demo app in Streamlit Community Cloud needs streamlit-clickable-list package from pypi, though the package from pypi is not necessary to develop the component
 - Push github, then it will be deployed to Streamlit Community Cloud
+  ```
+  git push origin main
+  ```
 
