@@ -6,8 +6,6 @@ authors = [
 ]
 description = "A simple clickable list component for streamlit"
 readme = "README.md"
-license = "MIT License"
-license-files = ["LICENSE"]
 keywords = ["streamlit", "component", "clickable", "list", "text"]
 requires-python = "==3.9"
 dependencies = [

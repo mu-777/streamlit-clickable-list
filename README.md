@@ -94,12 +94,18 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   # with WSL
   streamlit run demo.py --server.fileWatcherType=poll --server.address=0.0.0.0
   ```
+- Update version
+  - Edit `pyproject.toml` to change version
 - Build python
   - If you use `uv`, run:
     ```
+    rm dist/streamlit_clickable_list-*
     uv build
     ```
 - Push to GitHub (if you update `README.md`)
+  ```
+  git push origin main
+  ```
 - Publish to PyPI
   ```
   uv publish --token <PyPI token>
