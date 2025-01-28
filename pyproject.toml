@@ -14,3 +14,5 @@ dependencies = [
 [project.urls]
 Repository = "https://github.com/mu-777/streamlit-clickable-list"
 Demo="https://demopy-6aplg2asvytivaazchhqbj.streamlit.app"
+[tool.setuptools]
+packages = ["streamlit_clickable_list"] # https://stackoverflow.com/questions/72294299/multiple-top-level-packages-discovered-in-a-flat-layout
