@@ -67,10 +67,10 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   ```
 - Run streamlit app
   ```
-  streamlit run demo.py
+  streamlit run sample.py
 
-  # with WSL
-  streamlit run demo.py --server.fileWatcherType=poll --server.address=0.0.0.0
+  # with WSL + uv
+  uv run streamlit run sample.py --server.fileWatcherType=poll --server.address=0.0.0.0
   ```
   - If you use `uv`, add `uv run`
 
@@ -89,10 +89,10 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   ```
 - Run the app to check it in local
   ```
-  streamlit run demo.py
+  streamlit run sample.py
 
-  # with WSL
-  streamlit run demo.py --server.fileWatcherType=poll --server.address=0.0.0.0
+  # with WSL + uv
+  uv run streamlit run sample.py --server.fileWatcherType=poll --server.address=0.0.0.0
   ```
 - Update version
   - Edit `pyproject.toml` to change version
