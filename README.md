@@ -65,6 +65,7 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   cd frontend
   npm start
   ```
+  - Then, a server will be run in port=3001
 - Run streamlit app
   ```
   streamlit run sample.py
@@ -72,7 +73,7 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   # with WSL + uv
   uv run streamlit run sample.py --server.fileWatcherType=poll --server.address=0.0.0.0
   ```
-  - If you use `uv`, add `uv run`
+  - Then, see `localhost:8501` in your browser
 
 ### Develop demo/demo.py
 
@@ -88,6 +89,7 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   # with WSL + uv
   uv run streamlit run demo.py --server.fileWatcherType=poll --server.address=0.0.0.0
   ```
+  - Then, see `localhost:8501` in your browser
 - Edit `demo/demo.py`
 
 ### Release to PyPI
@@ -112,6 +114,12 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   ```
 - Update version
   - Edit `pyproject.toml` to change version
+    ```diff
+    [project]
+    name = "streamlit-clickable-list"
+    -version = "X.Y.Z"
+    +version = "X.Y.W"
+    ```
 - Build python
   - If you use `uv`, run:
     ```
