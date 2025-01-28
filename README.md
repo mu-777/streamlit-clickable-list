@@ -74,6 +74,22 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   ```
   - If you use `uv`, add `uv run`
 
+### Develop demo/demo.py
+
+- Make symbolic link
+  ```
+  ln -s demo/demo.py ./
+  ```
+  - `demo/demo.py` use streamlit-clickable-list from PyPI. The symbolic link allow it to use local component code
+- Run streamlit app
+  ```
+  streamlit run demo.py
+
+  # with WSL + uv
+  uv run streamlit run demo.py --server.fileWatcherType=poll --server.address=0.0.0.0
+  ```
+- Edit `demo/demo.py`
+
 ### Release to PyPI
 
 - Use release mode

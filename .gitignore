@@ -6,3 +6,6 @@ __pycache__/
 uv.lock
 .venv
 *.egg-info/
+
+demo.py
+!demo/demo.py
