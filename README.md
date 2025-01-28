@@ -1,6 +1,6 @@
 # streamlit-clickable-list
 
-See demo: 
+See demo: https://demopy-6aplg2asvytivaazchhqbj.streamlit.app/
 
 ## How to install
 ```
@@ -74,7 +74,7 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   ```
   - If you use `uv`, add `uv run`
 
-### Build
+### Release to PyPI
 
 - Use release mode
   - Edit `streamlit_clickable_list/__init__.py`
@@ -87,31 +87,39 @@ Based on: https://docs.streamlit.io/develop/concepts/custom-components/intro
   cd frontend
   npm build
   ```
+- Run the app to check it in local
+  ```
+  streamlit run demo.py
 
-### Release
-
+  # with WSL
+  streamlit run demo.py --server.fileWatcherType=poll --server.address=0.0.0.0
+  ```
 - Build python
   - If you use `uv`, run:
     ```
     uv build
     ```
+- Push to GitHub (if you update `README.md`)
+- Publish to PyPI
+  ```
+  uv publish --token <PyPI token>
+  ```
+  - Check `$HOME/.pypirc` for \<PyPI token\>
 
-#### To Streamlit Community Cloud
+### Release to Streamlit Community Cloud
 
 Only the first time:
 - Log in [Streamlit Community Cloud](https://streamlit.io/cloud)
 - "Create app" > "Deploy a public app from GitHub"
 - Input info in "Deploy an app"
 
-
-
 To publish:
+- First, publish it to PyPI
+  - Because the app in Streamlit Community Cloud uses the streamlit-clickable-list in PyPI
 - Generate `requirement.txt`
   - If you use `uv`, run:
     ```
     uv pip compile pyproject.toml > requirements.txt
     ```
-- Push github
-
-#### To PyPI
+- Push github, then it will be deployed to Streamlit Community Cloud
 

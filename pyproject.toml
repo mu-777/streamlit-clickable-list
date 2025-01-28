@@ -1,9 +1,18 @@
 [project]
 name = "streamlit-clickable-list"
 version = "0.1.0"
-description = "Add your description here"
+authors = [
+  {name = "mu-777"},
+]
+description = "A simple clickable list component for streamlit"
 readme = "README.md"
+license = "MIT License"
+license-files = ["LICENSE"]
+keywords = ["streamlit", "component", "clickable", "list", "text"]
 requires-python = "==3.9"
 dependencies = [
     "streamlit >= 0.63",
 ]
+[project.urls]
+Repository = "https://github.com/mu-777/streamlit-clickable-list"
+Demo="https://demopy-6aplg2asvytivaazchhqbj.streamlit.app"
