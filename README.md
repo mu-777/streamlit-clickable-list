@@ -1,6 +1,6 @@
 # streamlit-clickable-list
 
-See demo: https://demopy-esoz75md8bttxnf4zvk9wa.streamlit.app/
+See demo: https://clickable-list.streamlit.app/
 
 ## How to install
 ```
