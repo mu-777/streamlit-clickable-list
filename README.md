@@ -7,6 +7,8 @@ See demo: https://clickable-list.streamlit.app/
 pip install streamlit-clickable-list
 ```
 
+[![PyPI Downloads](https://static.pepy.tech/badge/streamlit-clickable-list)](https://pepy.tech/projects/streamlit-clickable-list)
+
 ## How to use
 
 ```python
